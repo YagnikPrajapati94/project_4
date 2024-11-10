@@ -1,0 +1,309 @@
+body{
+    font-family: VerminVibes !important;
+    overflow-x: hidden !important;
+}
+nav{
+    background-color: #0c0305 !important;
+}
+header {
+    z-index: 1000;
+    transition: top 0.3s; 
+}
+.navbar.scrolled {
+    background-color: #0c0305 !important;  
+    
+}
+.s1_bg{
+    background-image: url(../img/main-banner-bg2.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+.s1_bg2{
+    background-image: url(../img/main-banner-bg4.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+.s1_bg3{
+    background-image: url(../img/main-banner-bg3.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+a{
+    text-decoration: none !important;
+}
+.li_nav_hover{
+    /* position: relative !important; */
+    transition: 0.3s ease-in-out all;
+}
+.li_nav_hover:hover{
+    background-color: rgba(255, 0, 0, 0.322) !important;
+    transition: 0.3s ease-in-out all;
+}
+.li_nav_hover:hover .list_flip{
+    display: block !important;
+    background-color: #020616 !important;
+}
+.text-hover{
+    transition: 0.3s ease-in-out all;
+}
+.text-hover:hover{
+    color: red !important;
+    transition: 0.3s ease-in-out all;
+    text-indent: 12px;
+}
+.text-hover:hover .text-color{
+    color: red !important;
+}
+
+.list_flip{
+    animation: rotate360 0.3s ease-in-out ;
+    display: none !important;
+    
+}
+@keyframes rotate360 {
+    0% {
+      transform: rotatey(280deg);
+    }
+    100% {
+      transform: rotatey(360deg);
+    }
+  }
+.social_card{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}  
+.fa-instagram{
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.social_img{
+    transition: all 0.3s ease-in-out;
+}
+.social_card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fc0820 !important;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.social_card:hover::before{
+    opacity: 0.5;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+
+}
+.social_card:hover .fa-instagram{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+.social_card:hover .social_img{
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
+.fa-xmark{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.fa-xmark:hover{
+    color: red !important;
+    transition: all 0.3s ease-in-out;
+}
+.color_hover{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.color_hover:hover{
+    color: red !important;
+    transition: all 0.3s ease-in-out;
+}
+.btn_hover{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+.btn_hover::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+.btn_span{
+    position: relative;
+    z-index: 2;
+}
+.btn_hover:hover::before{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.btn_hover:hover{
+    color: red !important;
+}
+#offcanvasRight,#offcanvasWithBothOptions{
+    transition: 0.5s ease-in-out all;
+    /* position: absolute !important; */
+}
+
+/* pagination  */
+/* Basic Swiper Styling */
+.swiper-pagination {
+    /* position: absolute; */
+    bottom: 10px !important;  /* Position it where you want */
+    display: flex;
+    gap: 5px; 
+}
+
+/* Custom Style for Pagination Bullet (Square design) */
+.swiper-pagination .swiper-pagination-bullet {
+    width: 30px;  /* Size of the square */
+    height: 5px;  /* Height of the square line */
+    background-color: white;  /* Default inactive color */
+    opacity: 1;  /* Ensure full opacity for inactive bullets */
+    border-radius: 0;  /* No rounded corners for square shape */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 12px;
+}
+
+/* Style for active slide's bullet */
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: red;  /* Active color */
+    transform: scale(1.2);  /* Slightly larger active bullet */
+}
+
+/* Optional: Remove bullet outlines if needed */
+.swiper-pagination .swiper-pagination-bullet:focus {
+    outline: none;
+}
+/* scrollbar  */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    /* background-color: #020616; */
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 255, 0.915); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+/* -----------------------section 2-------------------------- */
+.s2_bg{
+    background-image: url(../img/matches-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.text-color-hover{
+    position: relative;
+    transition: 0.3s ease-in-out all;
+}
+.text-color-hover:hover{
+    color: red !important;
+    transition: 0.3s ease-in-out all;
+}
+.gaming1{
+    background-image: url(../img/matches-bg1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gaming2{
+    background-image: url(../img/matches-bg2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+img{
+    object-fit: cover;
+}
+
+/* section 3  */
+/* .slide_bg{
+    background-image: url(../img/top-team-bg.png);
+    background-size: cover;
+    background-position: center;
+} */
+
+/* section 4  */
+.s4_bg{
+    background-image: url(../img/awards-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}  
+.content{
+    transform: translateY(100px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.card-hover{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.card-hover:hover .content{
+    transform: translateY(0px);
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+/* section 5  */
+.swiper-slide{
+    cursor: pointer;
+}
+
+/* section 8  */
+.s8_bg{
+    background-image: url(../img/subscribe-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.footer_bg{
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-position: end;
+    background-color: #0c0305;
+}
+.social-hover{
+    position: relative;
+    cursor: pointer;
+}
+.img-1,.img-2{
+    transition:all  0.3s ease-in-out;
+}
+
+.social-hover:hover .img-1{
+    display: none;
+    opacity: 0;
+    transition:all 0.3s  ease-in-out;
+}
+.social-hover:hover .img-2{
+    display: block !important;
+    transition:all 0.3s  ease-in-out;
+}
