@@ -1,7 +1,10 @@
 body{
     font-family: VerminVibes !important;
     overflow-x: hidden !important;
+    box-sizing: border-box;
+
 }
+
 nav{
     background-color: #0c0305 !important;
 }
